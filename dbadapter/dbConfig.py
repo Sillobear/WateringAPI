@@ -1,10 +1,10 @@
 from pymongo import MongoClient
 
-CONNECTION_STRING = "mongodb+srv://sbranden:3Rc5zdaUNtr33HOw@wateringdb.udefj6u.mongodb.net/?retryWrites=true&w=majority"
+CONNECTION_STRING = "mongodb+srv://api:pymongo@clusteriot.w0cvdaq.mongodb.net/?retryWrites=true&w=majority"
 
 def get_database():
     client = MongoClient(CONNECTION_STRING)
-    return client['wateringdb']
+    return client['sensor_db']
 
 if __name__ == "__main__":
     # Get the database
